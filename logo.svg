@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1f18" />
+      <stop offset="50%" stop-color="#0d2b22" />
+      <stop offset="100%" stop-color="#061510" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+
+    <linearGradient id="towerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="50%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="110" fill="#0b0f19" />
+  
+  <!-- Outer Medallion Border -->
+  <circle cx="256" cy="256" r="236" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="8" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="222" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="256" cy="256" r="214" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.9"/>
+
+  <!-- Laurel Wreath (Bottom Half) -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <!-- Left Leaves -->
+    <path d="M120 340 C105 310 95 270 95 230 C95 220 102 215 106 225 C112 245 125 270 145 290 Z"/>
+    <path d="M135 370 C115 345 105 315 100 280 C110 290 125 305 145 320 Z"/>
+    <path d="M165 405 C140 380 120 345 115 310 C125 325 145 345 170 360 Z"/>
+    <path d="M205 435 C175 415 150 385 135 350 C150 365 175 385 205 400 Z"/>
+    <path d="M245 450 C215 440 185 415 165 385 C180 405 205 425 240 435 Z"/>
+
+    <!-- Right Leaves -->
+    <path d="M392 340 C407 310 417 270 417 230 C417 220 410 215 406 225 C400 245 387 270 367 290 Z"/>
+    <path d="M377 370 C397 345 407 315 412 280 C402 290 387 305 367 320 Z"/>
+    <path d="M347 405 C372 380 392 345 397 310 C387 325 367 345 342 360 Z"/>
+    <path d="M307 435 C337 415 362 385 377 350 C362 365 337 385 307 400 Z"/>
+    <path d="M267 450 C297 440 327 415 347 385 C332 405 307 425 272 435 Z"/>
+
+    <!-- Center Bow/Ribbon Knot -->
+    <circle cx="256" cy="445" r="7" fill="url(#goldLight)"/>
+  </g>
+
+  <!-- ================= KIRTI STAMBH TOWER ================= -->
+  <g id="kirti-stambh" filter="url(#glow)">
+
+    <!-- Stepped Plinth Base -->
+    <rect x="176" y="388" width="160" height="10" rx="3" fill="url(#goldGrad)"/>
+    <rect x="188" y="378" width="136" height="10" rx="2" fill="url(#goldLight)"/>
+    <rect x="200" y="368" width="112" height="10" rx="2" fill="url(#goldGrad)"/>
+
+    <!-- Level 1 (Ground Pavilion): Octagonal Pillars & Arches -->
+    <rect x="204" y="318" width="104" height="50" fill="#0d2b22" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Pillars -->
+    <line x1="210" y1="318" x2="210" y2="368" stroke="url(#goldLight)" stroke-width="4"/>
+    <line x1="230" y1="318" x2="230" y2="368" stroke="url(#goldLight)" stroke-width="3"/>
+    <line x1="256" y1="318" x2="256" y2="368" stroke="url(#goldLight)" stroke-width="4"/>
+    <line x1="282" y1="318" x2="282" y2="368" stroke="url(#goldLight)" stroke-width="3"/>
+    <line x1="302" y1="318" x2="302" y2="368" stroke="url(#goldLight)" stroke-width="4"/>
+    <!-- Arches -->
+    <path d="M210 334 Q220 322 230 334 M230 334 Q243 320 256 334 M256 334 Q269 320 282 334 M282 334 Q292 322 302 334" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+    <!-- Balcony 1 (Wide Cantilevered Balcony with Brackets) -->
+    <polygon points="190,318 322,318 316,310 196,310" fill="url(#goldGrad)"/>
+    <rect x="194" y="302" width="124" height="8" rx="2" fill="url(#goldLight)"/>
+    <!-- Railing details -->
+    <line x1="196" y1="306" x2="316" y2="306" stroke="#92400e" stroke-width="2"/>
+    <line x1="202" y1="302" x2="202" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="220" y1="302" x2="220" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="238" y1="302" x2="238" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="256" y1="302" x2="256" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="274" y1="302" x2="274" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="292" y1="302" x2="292" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+    <line x1="310" y1="302" x2="310" y2="310" stroke="url(#goldGrad)" stroke-width="2"/>
+
+    <!-- Level 2 (Middle Tower Shaft with Jharokhas) -->
+    <rect x="214" y="254" width="84" height="48" fill="#0d2b22" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Arched Niche Center -->
+    <path d="M244 290 L244 266 Q256 256 268 266 L268 290 Z" fill="url(#goldGrad)" opacity="0.9"/>
+    <!-- Side Niches -->
+    <path d="M222 288 L222 268 Q228 260 234 268 L234 288 Z" fill="url(#goldGrad)" opacity="0.5"/>
+    <path d="M278 288 L278 268 Q284 260 290 268 L290 288 Z" fill="url(#goldGrad)" opacity="0.5"/>
+
+    <!-- Balcony 2 (Middle Balcony) -->
+    <polygon points="204,254 308,254 304,248 208,248" fill="url(#goldGrad)"/>
+    <rect x="206" y="242" width="100" height="6" rx="1.5" fill="url(#goldLight)"/>
+    <line x1="208" y1="245" x2="304" y2="245" stroke="#92400e" stroke-width="1.5"/>
+
+    <!-- Level 3 (Upper Shaft) -->
+    <rect x="222" y="202" width="68" height="40" fill="#0d2b22" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Upper Niches -->
+    <path d="M246 236 L246 216 Q256 208 266 216 L266 236 Z" fill="url(#goldGrad)" opacity="0.85"/>
+    <line x1="232" y1="202" x2="232" y2="242" stroke="url(#goldLight)" stroke-width="2"/>
+    <line x1="280" y1="202" x2="280" y2="242" stroke="url(#goldLight)" stroke-width="2"/>
+
+    <!-- Balcony 3 (Top Pavilion Balcony) -->
+    <polygon points="214,202 298,202 294,196 218,196" fill="url(#goldGrad)"/>
+    <rect x="216" y="190" width="80" height="6" rx="1.5" fill="url(#goldLight)"/>
+
+    <!-- Level 4 (Top Open Chhatri Pavilion) -->
+    <rect x="226" y="152" width="60" height="38" fill="#0d2b22" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <!-- Chhatri Slender Pillars -->
+    <line x1="230" y1="152" x2="230" y2="190" stroke="url(#goldLight)" stroke-width="3"/>
+    <line x1="247" y1="152" x2="247" y2="190" stroke="url(#goldLight)" stroke-width="2.5"/>
+    <line x1="265" y1="152" x2="265" y2="190" stroke="url(#goldLight)" stroke-width="2.5"/>
+    <line x1="282" y1="152" x2="282" y2="190" stroke="url(#goldLight)" stroke-width="3"/>
+    <!-- Cusped Chhatri Arches -->
+    <path d="M230 164 Q238.5 154 247 164 M247 164 Q256 152 265 164 M265 164 Q273.5 154 282 164" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+
+    <!-- Chhatri Eaves / Chhajja (Sloping Roof Cornice) -->
+    <polygon points="218,152 294,152 288,144 224,144" fill="url(#goldGrad)"/>
+    <rect x="226" y="142" width="60" height="4" rx="1" fill="url(#goldLight)"/>
+
+    <!-- Grand Dome (Fluted Ribbed Dome) -->
+    <path d="M228 142 C228 106 244 94 256 94 C268 94 284 106 284 142 Z" fill="url(#towerGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Ribbed Dome Grooves -->
+    <path d="M238 142 C240 114 249 99 256 94" fill="none" stroke="#b45309" stroke-width="1.5"/>
+    <path d="M274 142 C272 114 263 99 256 94" fill="none" stroke="#b45309" stroke-width="1.5"/>
+    <line x1="256" y1="94" x2="256" y2="142" stroke="#b45309" stroke-width="1.5"/>
+
+    <!-- Kalash & Spire / Pinnacle (Top Finial) -->
+    <!-- Base ring of spire -->
+    <ellipse cx="256" cy="94" rx="7" ry="2.5" fill="url(#goldGrad)"/>
+    <!-- Spire shaft -->
+    <line x1="256" y1="94" x2="256" y2="68" stroke="url(#goldLight)" stroke-width="3"/>
+    <!-- Miniature Upper Bulb -->
+    <ellipse cx="256" cy="80" rx="4" ry="4" fill="url(#goldLight)"/>
+    <ellipse cx="256" cy="72" rx="2.5" ry="2.5" fill="url(#goldGrad)"/>
+    <!-- Pinnacle point -->
+    <polygon points="256,60 258,68 254,68" fill="url(#goldLight)"/>
+    <circle cx="256" cy="58" r="2" fill="#fef3c7"/>
+  </g>
+</svg>
